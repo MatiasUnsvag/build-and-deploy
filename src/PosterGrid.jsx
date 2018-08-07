@@ -141,9 +141,6 @@ class PosterCarousel extends Component {
     const currentMovie = movies[currentMovieIndex];
     const isLastMovieInList = currentMovieIndex + 1 === movies.length;
     const posterUrl = this.constructPosterUrl(currentMovie.poster_path);
-    {movies.map(movie => (
-      <PosterCard posterUrl={constructPosterUrl(movie.poster_path)} ...
-    ))}
 
 
     return (
